@@ -177,12 +177,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dd5d321486f798541a77a818eb96c645, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53bf8ca35cc6f2444af504a16712d899, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 18.618181, y: 18.618181}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1270,11 +1270,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8625128244422548692, guid: cecedf91865fb084b8991ab17351bb0a,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.5535965
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecedf91865fb084b8991ab17351bb0a, type: 3}

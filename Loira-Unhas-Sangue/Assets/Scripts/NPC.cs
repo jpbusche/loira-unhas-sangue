@@ -24,8 +24,8 @@ public class NPC : MonoBehaviour {
             input.x = Random.Range(-1, 2);
             input.y = Random.Range(-1, 2);
             Rotation();
+            movement = input.normalized * speed * Time.fixedDeltaTime;
         }
-        movement = input.normalized * speed * Time.fixedDeltaTime;
         body.MovePosition(transform.position + movement);
     }
 
