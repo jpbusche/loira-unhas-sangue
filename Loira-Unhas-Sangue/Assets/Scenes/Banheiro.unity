@@ -1287,8 +1287,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 4419762002059198378, guid: 8f1182f7bf80b6f459fb7624bcd367ec, type: 3}
   - {fileID: 2995568744613748581, guid: cdb61351efb48324b8894b99b3a0ce3d, type: 3}
-  numberOfNPC: 5
-  lifes: {fileID: 0}
+  numberOfNPC: 2
   initialScreen: {fileID: 8300000, guid: 956247a6f7c766841862a687d09bf77e, type: 3}
 --- !u!4 &1347162614
 Transform:

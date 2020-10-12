@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Perdeu.unity
-    guid: 2f87457f5ef9e36429f9aaf5b7463ab4
+    path: Assets/Scenes/Menu.unity
+    guid: 7cc2571c2b633a346ba3c9abdf8d2c1e
   - enabled: 1
     path: Assets/Scenes/Banheiro.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Perdeu.unity
+    guid: 2f87457f5ef9e36429f9aaf5b7463ab4
+  - enabled: 1
+    path: Assets/Scenes/Ganhou.unity
+    guid: f244fb47f141d7b4abe42d9c4248d0dd
+  - enabled: 1
+    path: Assets/Scenes/Comandos.unity
+    guid: bbf9fde9cde6d7044b88dc1ca39fc639
   m_configObjects: {}

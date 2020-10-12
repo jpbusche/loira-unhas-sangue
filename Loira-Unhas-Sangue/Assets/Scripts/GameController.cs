@@ -9,10 +9,10 @@ public class GameController : MonoBehaviour {
     [SerializeField] Vector2 Xpos, Ypos;
     [SerializeField] GameObject[] prefabs;
     [SerializeField] int numberOfNPC;
-    [SerializeField] Text lifes;
     [SerializeField] AudioClip initialScreen;
     float x, y;
     Player player;
+    int NPCalives;
     void Start() {
         player = GameObject.FindObjectOfType<Player>();
         AudioSource.PlayClipAtPoint(initialScreen, transform.position);
@@ -24,9 +24,13 @@ public class GameController : MonoBehaviour {
     }
 
     void Update() {
+        NPCalives = GameObject.FindGameObjectsWithTag("NPC").Length;
         if (player.GetLifes() == 0) {
             player.ResetLifes();
             SceneManager.LoadScene("Perdeu");
+        } else if(NPCalives == 0) {
+            player.ResetLifes();
+            SceneManager.LoadScene("Ganhou");
         }
     }
 }
