@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -9,10 +10,12 @@ public class GameController : MonoBehaviour {
     [SerializeField] GameObject[] prefabs;
     [SerializeField] int numberOfNPC;
     [SerializeField] Text lifes;
+    [SerializeField] AudioClip initialScreen;
     float x, y;
     Player player;
     void Start() {
         player = GameObject.FindObjectOfType<Player>();
+        AudioSource.PlayClipAtPoint(initialScreen, transform.position);
         for(int i = 0; i < numberOfNPC; i++) {
             x = Random.Range(Xpos.x, Xpos.y);
             y = Random.Range(Ypos.x, Ypos.y);
@@ -21,6 +24,9 @@ public class GameController : MonoBehaviour {
     }
 
     void Update() {
-        lifes.text = "Vidas: " + player.GetLifes().ToString();
+        if (player.GetLifes() == 0) {
+            player.ResetLifes();
+            SceneManager.LoadScene("Perdeu");
+        }
     }
 }

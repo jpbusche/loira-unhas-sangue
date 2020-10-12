@@ -50,4 +50,8 @@ public class Player : MonoBehaviour {
     public int GetLifes() {
         return lifes;
     }
+
+    public void ResetLifes() {
+        lifes = 10;
+    }
 }
