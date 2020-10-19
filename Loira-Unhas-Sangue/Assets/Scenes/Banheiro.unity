@@ -251,7 +251,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 53bf8ca35cc6f2444af504a16712d899, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6915fe900852bc649a97c8bd4d502178, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -358,7 +358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428593824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.06, y: -6.3, z: 0}
+  m_LocalPosition: {x: -6.45, y: -5.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -793,7 +793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937421834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.06, y: 0.02, z: 0}
+  m_LocalPosition: {x: -6.38, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006819342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.06, y: 6.06, z: 0}
+  m_LocalPosition: {x: -6.38, y: 4.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -1220,7 +1220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281196068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.67, y: 1.12, z: 0}
+  m_LocalPosition: {x: 0, y: 7.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -1250,7 +1250,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 12.5}
+  m_Size: {x: 16, y: 1.2}
   m_EdgeRadius: 0
 --- !u!1 &1347162612
 GameObject:
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 4419762002059198378, guid: 8f1182f7bf80b6f459fb7624bcd367ec, type: 3}
   - {fileID: 2995568744613748581, guid: cdb61351efb48324b8894b99b3a0ce3d, type: 3}
-  numberOfNPC: 2
+  numberOfNPC: 5
   initialScreen: {fileID: 8300000, guid: 956247a6f7c766841862a687d09bf77e, type: 3}
 --- !u!4 &1347162614
 Transform:
@@ -1313,9 +1313,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cc3bfe7dc30497a4996f36857897b593, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fc8eee80ab8d0784e85d8d33241513dc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1572,7 +1572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644244328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.06, y: 3.21, z: 0}
+  m_LocalPosition: {x: -6.31, y: 1.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -1641,6 +1641,7 @@ Transform:
   - {fileID: 1644244329}
   - {fileID: 1006819343}
   - {fileID: 1281196069}
+  - {fileID: 1998597693}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1735,7 +1736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891799022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.06, y: -3.24, z: 0}
+  m_LocalPosition: {x: -6.38, y: -2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1867519467}
@@ -1766,6 +1767,63 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 4.5, y: 0.3}
+  m_EdgeRadius: 0
+--- !u!1 &1998597692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998597693}
+  - component: {fileID: 1998597694}
+  m_Layer: 10
+  m_Name: BoxWall (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998597693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998597692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.14, y: -7.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1867519467}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1998597694
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998597692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 3.5}
   m_EdgeRadius: 0
 --- !u!1 &2031324013
 GameObject:
@@ -1980,10 +2038,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1401761089, guid: cecedf91865fb084b8991ab17351bb0a, type: 3}
-      propertyPath: nails.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1401761089, guid: cecedf91865fb084b8991ab17351bb0a, type: 3}
       propertyPath: nails.Array.data[0]
       value: 
       objectReference: {fileID: 801582529}
@@ -2026,12 +2080,12 @@ PrefabInstance:
     - target: {fileID: 3194401759277568841, guid: cecedf91865fb084b8991ab17351bb0a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.46
       objectReference: {fileID: 0}
     - target: {fileID: 3194401759277568841, guid: cecedf91865fb084b8991ab17351bb0a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -7.31
       objectReference: {fileID: 0}
     - target: {fileID: 3194401759277568841, guid: cecedf91865fb084b8991ab17351bb0a,
         type: 3}

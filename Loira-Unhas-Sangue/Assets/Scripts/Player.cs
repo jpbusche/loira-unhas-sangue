@@ -8,11 +8,13 @@ public class Player : MonoBehaviour {
     Vector3 input, movement;
     Quaternion target;
     Rigidbody2D body;
+    Animator anim;
     static bool seen = false;
     static int lifes = 10;
     
     void Start() {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         input = Vector3.zero;
     }
 
@@ -20,6 +22,8 @@ public class Player : MonoBehaviour {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
         Rotation();
+        if (input.x != 0 || input.y != 0) anim.Play("Walk");
+        else anim.Play("Idle");
         movement = input.normalized * speed * Time.fixedDeltaTime;
         body.MovePosition(transform.position + movement);
     }
