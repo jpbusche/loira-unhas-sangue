@@ -9,6 +9,9 @@
         - [2.2 Screenshots](#22-screenshots)
         - [2.3 Itch.io](#23-itchio)
     - [3. Gameplay](#3-gameplay)
+        - [3.1 Objetivo](#31-objetivo)
+        - [3.2 Controles](#32-controles)      
+--------------------------------
 
 ## 1. Descrição
 
